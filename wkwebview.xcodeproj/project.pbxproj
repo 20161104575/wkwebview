@@ -14,6 +14,10 @@
 		D76C6B6321DF3067002ADEF3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D76C6B6121DF3067002ADEF3 /* LaunchScreen.storyboard */; };
 		D76C6B6E21DF3067002ADEF3 /* wkwebviewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76C6B6D21DF3067002ADEF3 /* wkwebviewTests.swift */; };
 		D76C6B7921DF3067002ADEF3 /* wkwebviewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76C6B7821DF3067002ADEF3 /* wkwebviewUITests.swift */; };
+		D76C6B8721DF5F27002ADEF3 /* 3.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = D76C6B8621DF5F27002ADEF3 /* 3.jpeg */; };
+		D76C6B8921DF67CF002ADEF3 /* houtui.png in Resources */ = {isa = PBXBuildFile; fileRef = D76C6B8821DF67CF002ADEF3 /* houtui.png */; };
+		D76C6B8B21DF6818002ADEF3 /* forward.png in Resources */ = {isa = PBXBuildFile; fileRef = D76C6B8A21DF6817002ADEF3 /* forward.png */; };
+		D76C6B8D21DF6874002ADEF3 /* new.png in Resources */ = {isa = PBXBuildFile; fileRef = D76C6B8C21DF6874002ADEF3 /* new.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,10 @@
 		D76C6B7421DF3067002ADEF3 /* wkwebviewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = wkwebviewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D76C6B7821DF3067002ADEF3 /* wkwebviewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wkwebviewUITests.swift; sourceTree = "<group>"; };
 		D76C6B7A21DF3067002ADEF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D76C6B8621DF5F27002ADEF3 /* 3.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 3.jpeg; path = ../../3.jpeg; sourceTree = "<group>"; };
+		D76C6B8821DF67CF002ADEF3 /* houtui.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = houtui.png; path = ../../houtui.png; sourceTree = "<group>"; };
+		D76C6B8A21DF6817002ADEF3 /* forward.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = forward.png; path = ../../forward.png; sourceTree = "<group>"; };
+		D76C6B8C21DF6874002ADEF3 /* new.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = new.png; path = ../../new.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +107,10 @@
 			children = (
 				D76C6B5821DF3065002ADEF3 /* AppDelegate.swift */,
 				D76C6B5A21DF3065002ADEF3 /* ViewController.swift */,
+				D76C6B8621DF5F27002ADEF3 /* 3.jpeg */,
+				D76C6B8821DF67CF002ADEF3 /* houtui.png */,
+				D76C6B8A21DF6817002ADEF3 /* forward.png */,
+				D76C6B8C21DF6874002ADEF3 /* new.png */,
 				D76C6B5C21DF3065002ADEF3 /* Main.storyboard */,
 				D76C6B5F21DF3067002ADEF3 /* Assets.xcassets */,
 				D76C6B6121DF3067002ADEF3 /* LaunchScreen.storyboard */,
@@ -230,7 +242,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				D76C6B6321DF3067002ADEF3 /* LaunchScreen.storyboard in Resources */,
+				D76C6B8D21DF6874002ADEF3 /* new.png in Resources */,
+				D76C6B8721DF5F27002ADEF3 /* 3.jpeg in Resources */,
 				D76C6B6021DF3067002ADEF3 /* Assets.xcassets in Resources */,
+				D76C6B8B21DF6818002ADEF3 /* forward.png in Resources */,
+				D76C6B8921DF67CF002ADEF3 /* houtui.png in Resources */,
 				D76C6B5E21DF3065002ADEF3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

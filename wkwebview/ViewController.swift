@@ -9,13 +9,14 @@
 import UIKit
 import WebKit
 class ViewController: UIViewController {
+    
     lazy private var progressView: UIProgressView = {
         self.progressView = UIProgressView.init(frame: CGRect(x: CGFloat(0), y: CGFloat(65), width: UIScreen.main.bounds.width, height: 2))
-        self.progressView.tintColor = UIColor.green      // 进度条颜色
-        self.progressView.trackTintColor = UIColor.white // 进度条背景色
+        self.progressView.tintColor = UIColor.white      // 进度条颜色
+        self.progressView.trackTintColor = UIColor.green // 进度条背景色
         return self.progressView
         }()
-    let progressview = UIProgressView(frame: CGRect.init(x: 0, y: 0, width: 200, height: 10))
+    
     @IBOutlet weak var textfile: UITextField!
     @IBOutlet weak var webview: WKWebView!
     override func viewDidLoad() {
@@ -82,6 +83,7 @@ class ViewController: UIViewController {
     func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
         decisionHandler(.allow);
     }
+    
     
     override func touchesEnded(_ touches: Set<UITouch>,with event: UIEvent?){
         textfile.resignFirstResponder()

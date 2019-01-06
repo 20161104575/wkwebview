@@ -23,14 +23,13 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         view.addSubview(webview)
         view.addSubview(progressView)
-        webview.addObserver(self, forKeyPath: "estimatedProgress", options: .new, context: nil)
-        webview.load(URLRequest.init(url: URL.init(string: "https://www.baidu.com/")!))
+        webview.addObserver(self, forKeyPath: "estimatedProgress", options: .new, context: nil)//当前网页加载的进度，监听这个属性
+        webview.load(URLRequest.init(url: URL.init(string: "http://www.baidu.com/")!))
         // Do any additional setup after loading the view, typically from a nib.
     }
     override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
-        
         if keyPath == "estimatedProgress"{
-            progressView.alpha = 1.0
+            progressView.alpha = 1.0//透明度
             progressView.setProgress(Float(webview.estimatedProgress), animated: true)
             if webview.estimatedProgress >= 1.0 {
                 UIView.animate(withDuration: 0.3, delay: 0.1, options: .curveEaseOut, animations: {
@@ -57,44 +56,18 @@ class ViewController: UIViewController {
         let urls = textfile.text
         webview.load(NSURLRequest(url: NSURL(string: urls!)! as URL)as URLRequest)
     }
-    @IBAction func textEndOnExit(_ sender: Any){
-        textfile.resignFirstResponder()
-    }
-    
-    @IBAction func touchUpInside(_ sender: UIControl){
-        textfile.resignFirstResponder()
-    }
-    func webView(_ webView: WKWebView, didStartProvisionalNavigation navigation: WKNavigation!) {
-        print("开始加载")
-    }
-    
-    func webView(_ webView: WKWebView, didCommit navigation: WKNavigation!) {
-        print("开始获取网页内容")
-    }
-    
-    func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
-        print("加载完成")
-    }
-    
-    func webView(_ webView: WKWebView, didFail navigation: WKNavigation!, withError error: Error) {
-        print("加载失败")
-    }
+  
     
     func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
         decisionHandler(.allow);
     }
     
     
-    override func touchesEnded(_ touches: Set<UITouch>,with event: UIEvent?){
-        textfile.resignFirstResponder()
-    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
     @IBAction func stop(_ sender: Any) {
         webview.stopLoading();
     }
-    
-    
 }
 
